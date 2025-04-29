@@ -24,12 +24,130 @@
   .card__content {
     .card__title {
       font-size: 36px;
-      color: #1e1d1d;
+      color: $bg-primary;
+      font-family: Inter, sans-serif;
     }
     .card__description {
       width: 173px;
       color: #8b8e99;
       padding-top: 9px;
+      font-family: Inter, sans-serif;
     }
   }
+}
+
+@media (max-width: 900px) {
+  .cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 344px) {
+  .cards__wrapper {
+    .card {
+      &__content {
+        h3 {
+          font-size: 10px;
+        }
+        p {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+.watch__cards {
+  text-align: center;
+  margin-top: 135px;
+  p {
+    color: #3858d6;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+  }
+}
+
+.watchs__wrapper {
+  width: 1103px;
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.watch__card {
+  width: 335px;
+  height: 440px;
+  position: relative;
+  &__image {
+    width: 100%;
+    height: 337px;
+    background: #f6f6f6;
+    padding: 30px 40px;
+  }
+  &__bucket,
+  &__favourite {
+    width: 38px;
+    height: 38px;
+    background: #3858d6;
+    padding: 9px 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  &__favourite {
+    background: #ff6b6b;
+    padding: 11px 7px;
+    top: 56px;
+    right: 15px;
+  }
+}
+
+.watch__card__body {
+  text-align: center;
+  padding-top: 11px;
+  h3 {
+    font-size: 24px;
+    font-family: Inter, sans-serif;
+  }
+  .stars {
+    margin-top: 8px;
+  }
+  .watch__card__body__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    gap: 3px;
+    p {
+      text-decoration: line-through;
+      color: #8b8e99;
+      font-family: Inter, sans-serif;
+    }
+  }
+}
+
+.view__more {
+  width: 196px;
+  height: 46px;
+  background: #3858d6;
+  margin-top: 69px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 135px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  font-family: sans-serif;
+  cursor: pointer;
 }

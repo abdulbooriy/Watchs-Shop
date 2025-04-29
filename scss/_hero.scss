@@ -15,11 +15,13 @@
         width: 100%;
         h1{
             font-size: 60px;
+            font-family: Inter, sans-serif;
         }
         p{
             color: #8B8E99;
             margin: 47px 0;
             line-height: 1.25;
+            font-family: Inter, sans-serif;
         }
         
     }
@@ -35,6 +37,7 @@
             height: 100%;
             text-indent: 16px;
             background: transparent;
+            font-family: Inter, sans-serif;
         }
         button{
             width: 112px;
@@ -42,6 +45,8 @@
             border-radius: 9px;
             background: #3858D6;
             color: #fff;
+            cursor: pointer;
+            font-family: Inter, sans-serif;
         }
     }
     &__image{
